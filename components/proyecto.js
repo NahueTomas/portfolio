@@ -1,14 +1,24 @@
 import Image from "next/image";
 
-function Proyecto({ name, url }) {
+function Proyecto({ name, url, stack }) {
   return (
     <>
-      <a target="_blank" rel="noreferrer" href={url}>
-        <div>
-          <Image src={`/icons/${name}.svg`} width={45} height={45} alt={name} />
-        </div>
-        <span>{name}</span>
-      </a>
+      <article>
+        <a target="_blank" rel="noreferrer" href={url}>
+          <div>
+            <Image
+              src={`/icons/${name}.svg`}
+              width={45}
+              height={45}
+              alt={name}
+            />
+          </div>
+          <span>{name}</span>
+        </a>
+        <p>
+          <span className="resaltado">Stack:</span> {stack}
+        </p>
+      </article>
 
       <style jsx>{`
         a {
@@ -31,10 +41,22 @@ function Proyecto({ name, url }) {
           transform: rotate(-1deg) scale(1.05);
         }
 
+        p {
+          text-align: center;
+          font-size: 0.8rem;
+          margin: 5px auto 10px;
+        }
+
         span {
           color: #fff;
           font-size: 1.3rem;
           font-weight: lighter;
+        }
+
+        .resaltado {
+          font-size: 0.8rem;
+          color: #000;
+          font-weight: bolder;
         }
 
         a:hover span {

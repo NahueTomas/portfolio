@@ -38,16 +38,26 @@ export default function Home() {
           <section>
             <TituloSection texto="Trabajos realizados" />
             <Grid>
-              <Proyecto name="FLASHEO" url="https://flasheo.vercel.app/" />
+              <Proyecto
+                name="FLASHEO"
+                url="https://flasheo.vercel.app/"
+                stack="Figma, NextJS, CSS, MongoDB"
+              />
               <Proyecto
                 name="STUDY"
-                url="https://study-app-2021.herokuapp.com/bienvenido"
+                url="https://github.com/NahueTomas/study"
+                stack="Figma, NodeJS, PUG, JavaScript, CSS, MongoDB"
               />
               <Proyecto
                 name="4-IN-1"
                 url="https://github.com/NahueTomas/4-IN-1"
+                stack="Figma, React, CSS"
               />
-              <Proyecto name="PROMO" url="https://promosnacks.netlify.app/" />
+              <Proyecto
+                name="PROMO"
+                url="https://promosnacks.netlify.app/"
+                stack="Figma, HTML, CSS, JavaScript, NodeJS y MongoDB"
+              />
             </Grid>
           </section>
         </main>
