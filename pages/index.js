@@ -3,6 +3,7 @@ import Header from "../components/header";
 import Redes from "../components/redes";
 import Titulo from "../components/titulo";
 import TituloSection from "../components/titulo-section";
+import Skills from "../components/skills";
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
           </section>
           <section>
             <TituloSection texto="Conocimientos" />
+            <Skills />
           </section>
           <section></section>
         </main>
