@@ -7,6 +7,7 @@ import TituloSection from "../components/titulo-section";
 import Skills from "../components/skills";
 import Grid from "../components/grid";
 import Proyecto from "../components/proyecto";
+import Footer from "../components/footer";
 
 export default function Home() {
   return (
@@ -62,28 +63,13 @@ export default function Home() {
           </section>
         </main>
 
-        <footer>
-          <p>Página diseñada y programada por @nahuetomas</p>
-        </footer>
+        <Footer />
       </div>
 
       <style jsx>{`
         section {
           max-width: 500px;
           margin: 60px auto;
-        }
-
-        p {
-          font-weight: lighter;
-          max-width: 350px;
-          text-align: center;
-          font-size: 16px;
-          margin: 10px auto;
-        }
-
-        footer {
-          border-top: 1px solid #000;
-          padding-top: 20px;
         }
       `}</style>
     </>
