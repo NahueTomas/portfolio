@@ -10,6 +10,12 @@ function Grid({ children }) {
           padding: 20px;
           grid-gap: 20px;
         }
+
+        @media screen and (max-width: 515px) {
+          div {
+            grid-template-columns: 1fr;
+          }
+        }
       `}</style>
     </>
   );
