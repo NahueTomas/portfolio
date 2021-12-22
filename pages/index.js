@@ -18,7 +18,7 @@ export default function Home() {
         <Header>
           <div className="titles">
             <Titulo />
-            <Titulo texto="Diseñador Web" />
+            <Titulo texto="Desarrollador Web" />
           </div>
 
           <Redes />
@@ -36,10 +36,14 @@ export default function Home() {
             <TituloSection texto="Conocimientos" />
             <Skills />
           </section>
-          <section></section>
+          <section>
+            <TituloSection texto="Trabajos realizados" />
+          </section>
         </main>
 
-        <footer></footer>
+        <footer>
+          <p>Página diseñada y programada por @nahuetomas</p>
+        </footer>
       </div>
 
       <style jsx>{`
@@ -49,11 +53,20 @@ export default function Home() {
         }
 
         section p {
-          max-width: 350px;
           font-weight: bolder;
+        }
+
+        p {
+          font-weight: lighter;
+          max-width: 350px;
           text-align: center;
           font-size: 16px;
-          margin: auto;
+          margin: 10px auto;
+        }
+
+        footer {
+          border-top: 1px solid #000;
+          padding-top: 20px;
         }
       `}</style>
     </>
