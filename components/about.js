@@ -12,7 +12,7 @@ function About() {
         />
 
         <p>
-          Hola! mi nombre es Nahuel, soy Desarrollador Web me enfoco en
+          Hola! mi nombre es Nahuel, soy Desarrollador Web y me enfoco en
           desarrollo frontend, aunque cuento con algo de experiencia en backend.
         </p>
       </div>
