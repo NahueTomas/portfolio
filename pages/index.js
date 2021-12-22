@@ -2,8 +2,11 @@ import Head from "next/head";
 import Header from "../components/header";
 import Redes from "../components/redes";
 import Titulo from "../components/titulo";
+import About from "../components/about";
 import TituloSection from "../components/titulo-section";
 import Skills from "../components/skills";
+import Grid from "../components/grid";
+import Proyecto from "../components/proyecto";
 
 export default function Home() {
   return (
@@ -26,11 +29,7 @@ export default function Home() {
 
         <main>
           <section>
-            <p>
-              Hola! mi nombre es Nahuel, soy Desarrollador Web y aunque me
-              enfoco principalmente en frontend, cuento con algo de experiencia
-              en backend.
-            </p>
+            <About />
           </section>
           <section>
             <TituloSection texto="Conocimientos" />
@@ -38,6 +37,12 @@ export default function Home() {
           </section>
           <section>
             <TituloSection texto="Trabajos realizados" />
+            <Grid>
+              <Proyecto name="FLASHEO" />
+              <Proyecto name="STUDY" />
+              <Proyecto name="4-IN-1" />
+              <Proyecto name="PROMO" />
+            </Grid>
           </section>
         </main>
 
@@ -49,11 +54,7 @@ export default function Home() {
       <style jsx>{`
         section {
           max-width: 500px;
-          margin: 80px auto;
-        }
-
-        section p {
-          font-weight: bolder;
+          margin: 60px auto;
         }
 
         p {
