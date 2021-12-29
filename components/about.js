@@ -1,10 +1,8 @@
-import Image from "next/image";
-
 function About() {
   return (
     <>
       <div>
-        <Image
+        <img
           src="/NAHUEL.jpg"
           width={200}
           height={200}
@@ -29,6 +27,11 @@ function About() {
           text-align: center;
           font-size: 16px;
           margin: 30px auto 10px auto;
+          animation: animacion-izq-der 0.8s;
+        }
+
+        img {
+          animation: animacion-izq-der 0.8s;
         }
       `}</style>
     </>

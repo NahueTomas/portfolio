@@ -20,7 +20,7 @@ function SocialMedia({ media }) {
       </a>
 
       <style jsx>{`
-        img {
+        a {
           display: block;
         }
       `}</style>

@@ -27,6 +27,29 @@ body{
   padding: 20px 0px;
 }
 
+@keyframes animacion-izq-der {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes animacion-ab-arr {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 @media screen and (max-width: 870px){
   body{
     padding: 0px;

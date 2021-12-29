@@ -17,6 +17,7 @@ function Redes() {
           display: flex;
           align-items: center;
           justify-content: space-between;
+          animation: animacion-ab-arr 0.8s;
         }
       `}</style>
     </>
