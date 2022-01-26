@@ -1,13 +1,17 @@
 import SocialMedia from "./social-media";
 
-function Redes() {
+function Redes({ data }) {
   return (
     <>
       <div>
-        <SocialMedia media="github" />
-        <SocialMedia media="instagram" />
-        <SocialMedia media="linkedin" />
-        <SocialMedia media="twitter" />
+        {data.map((item) => (
+          <SocialMedia
+            key={item.site}
+            url={item.url}
+            img={item.img}
+            site={item.site}
+          />
+        ))}
       </div>
 
       <style jsx>{`

@@ -9,6 +9,29 @@ import Grid from "../components/grid";
 import Proyecto from "../components/proyecto";
 import Footer from "../components/footer";
 
+const redes = [
+  {
+    site: "github",
+    url: "https://github.com/NahueTomas",
+    img: "/icons/GITHUB.svg",
+  },
+  {
+    site: "instagram",
+    url: "https://www.instagram.com/nahuetomas/",
+    img: "/icons/INSTAGRAM.svg",
+  },
+  {
+    site: "linkedin",
+    url: "https://www.linkedin.com/in/nahuetomas/",
+    img: "/icons/LINKEDIN.svg",
+  },
+  {
+    site: "twitter",
+    url: "https://twitter.com/NahueTomas",
+    img: "/icons/TWITTER.svg",
+  },
+];
+
 export default function Home() {
   return (
     <>
@@ -25,7 +48,7 @@ export default function Home() {
             <Titulo texto="Desarrollador Web" />
           </div>
 
-          <Redes />
+          <Redes data={redes} />
         </Header>
 
         <main>

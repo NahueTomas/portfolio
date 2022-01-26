@@ -1,22 +1,10 @@
 import Image from "next/image";
 
-function SocialMedia({ media }) {
-  const urls = {
-    github: "https://github.com/NahueTomas",
-    instagram: "https://www.instagram.com/nahuetomas/",
-    linkedin: "https://www.linkedin.com/in/nahuetomas/",
-    twitter: "https://twitter.com/NahueTomas",
-  };
-
+function SocialMedia({ url, img, site }) {
   return (
     <>
-      <a href={urls[media]} target="_blank" rel="noreferrer">
-        <Image
-          src={`/icons/${media.toUpperCase()}.svg`}
-          alt={media}
-          width="32"
-          height="32"
-        />
+      <a href={url} target="_blank" rel="noreferrer">
+        <Image src={img} alt={site} width="32" height="32" />
       </a>
 
       <style jsx>{`
