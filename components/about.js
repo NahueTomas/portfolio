@@ -1,4 +1,4 @@
-function About() {
+function About({ texto }) {
   return (
     <>
       <div>
@@ -9,10 +9,7 @@ function About() {
           alt="Nahuel Tomás Rodriguez"
         />
 
-        <p>
-          Hola! mi nombre es Nahuel, soy Desarrollador Web y me enfoco en
-          desarrollo frontend, aunque cuento con algo de experiencia en backend.
-        </p>
+        <p>{texto}</p>
       </div>
       <style jsx>{`
         div {

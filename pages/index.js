@@ -32,6 +32,9 @@ const redes = [
   },
 ];
 
+const textoDePresentacion =
+  "¡Hola! Soy Nahuel, Desarrollador web enfocado en Frontend, aunque cuento con algo de experiecia desarrollando backend.";
+
 export default function Home() {
   return (
     <>
@@ -39,7 +42,7 @@ export default function Home() {
         <Head>
           <title>Nahuel Tomás Rodriguez</title>
           <meta name="description" content="Nahuel's portfolio" />
-          <link rel="icon" href="/NAHUEL.JPG" />
+          <link rel="icon" href="/NAHUEL.jpg" />
         </Head>
 
         <Header>
@@ -53,7 +56,7 @@ export default function Home() {
 
         <main>
           <section>
-            <About />
+            <About texto={textoDePresentacion} />
           </section>
           <section>
             <TituloSection texto="Conocimientos" />
