@@ -1,15 +1,21 @@
-import Image from "next/image";
-
 function SocialMedia({ url, img, site }) {
   return (
     <>
       <a href={url} target="_blank" rel="noreferrer">
-        <Image src={img} alt={site} width="32" height="32" />
+        <img src={img} alt={site} />
       </a>
 
       <style jsx>{`
         a {
           display: block;
+          width: 32px;
+          height: 32px;
+        }
+
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
         }
       `}</style>
     </>
