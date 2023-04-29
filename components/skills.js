@@ -2,14 +2,17 @@ import Skill from "./skill";
 
 function Skills() {
   const items = [
-    "/icons/CSS.svg",
     "/icons/HTML.svg",
+    "/icons/CSS.svg",
+    "/icons/SASS.svg",
+    "/icons/TAILWIND.svg",
     "/icons/JAVASCRIPT.svg",
     "/icons/NODE.svg",
     "/icons/REACT.svg",
-    "/icons/FIGMA.svg",
+    "/icons/NEXTJS.svg",
     "/icons/MONGODB.svg",
-    "/icons/JAVA.svg",
+    "/icons/MYSQL.svg",
+    "/icons/DYNAMODB.svg",
     "/icons/PYTHON.svg",
   ];
 

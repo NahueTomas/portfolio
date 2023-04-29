@@ -8,14 +8,11 @@ function SocialMedia({ url, img, site }) {
       <style jsx>{`
         a {
           display: block;
-          width: 32px;
-          height: 32px;
         }
 
         img {
           display: block;
-          width: 100%;
-          height: 100%;
+          height: 35px
         }
       `}</style>
     </>

@@ -16,24 +16,18 @@ const redes = [
     img: "/icons/GITHUB.svg",
   },
   {
-    site: "instagram",
-    url: "https://www.instagram.com/nahuetomas/",
-    img: "/icons/INSTAGRAM.svg",
+    site: "email",
+    url: "mailto:nahutomas@outlook.com",
+    img: "/icons/EMAIL.svg",
   },
   {
     site: "linkedin",
     url: "https://www.linkedin.com/in/nahuetomas/",
     img: "/icons/LINKEDIN.svg",
-  },
-  {
-    site: "twitter",
-    url: "https://twitter.com/NahueTomas",
-    img: "/icons/TWITTER.svg",
-  },
+  }
 ];
 
-const textoDePresentacion =
-  "¡Hola! Soy Nahuel, Desarrollador web enfocado en Frontend, aunque cuento con algo de experiecia desarrollando backend.";
+const textoDePresentacion = "¡Hola! Soy Nahuel, técnico en informática y estudiante de licenciatura en sistemas en la UNGS. Tengo experiencia en desarrollo frontend y backend."
 
 export default function Home() {
   return (
@@ -63,7 +57,7 @@ export default function Home() {
             <Skills />
           </section>
           <section>
-            <TituloSection texto="Trabajos realizados" />
+            <TituloSection texto="Desarrollos" />
             <Grid>
               <Proyecto
                 name="FLASHEO"
