@@ -2,9 +2,7 @@ function Footer() {
   return (
     <>
       <footer>
-        <p>
-          Página diseñada y programada por <span>@nahuetomas</span>
-        </p>
+        <p><span>@nahuetomas</span></p>
       </footer>
       <style jsx>{`
         p {
